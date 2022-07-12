@@ -1,0 +1,37 @@
+# Github
+email: bernhard_beetz@gmx.de
+pass: zeh35gkxfbvwd3p
+username: bhb-boy
+token: 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
+
+# upload von lokalen Änderungen
+cd ~/PycharmProjects/python-projects/udemy_python_bootcamp/
+git status
+git add -A
+git status
+git commit -m "Die message fuer den zweiten commit"
+git status
+git push -u origin main
+
+# Lokale Kopie ziehen, download von github und client Einrichtung
+git config --global user.name "bhb-boy"
+git config --global user.email "bernhard_beetz@gmx.de"
+git config --list
+vi ~/.gitconfig
+git init
+git clone https://www.github.com/bhb-boy/udemy_python_course
+
+https://www.udemy.com/course/python-bootcamp/learn/lecture/8003946#overview
+https://www.udemy.com/cart/success/780997288/ Python Schulun Notebook Install
+
+pip install ipython
+
+# start documentation with jupyter notebook
+
+cd ~/share/udemy_python_bootcamp_resources/Kursmaterialien
+jupyter notebook $filename
+
+nardo@tynan:~$ ./start_jupyter.sh
+
+Abschluss Grundlagen Übungsaufgaben
+(base) nardo@tynan:~/share/udemy_python_bootcamp_resources/Kursmaterialien/02, 03 - Python Bascis$ jupyter notebook Abschluss\ Python\ Grundlagen.ipynb 
