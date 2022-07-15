@@ -56,20 +56,56 @@ max_article = 10
     else:
         print("Wir haben mehr als einen Artikel")"""
 
-#    print("blubb")
+
 def tolle_funktion():
     price = 0.79
     count = 2
-    while count <= 10:
+"""    while count <= 10:
         print(article,price)
         count = count + 1
-        new_price = (float(price)) + (float(price))   # Hier soll der preis erneut addiert werden
+        new_price = (float(price)) + (float(price))   # Hier soll der Preis addiert werden
+#        print(new_price)
         next_price = (float(new_price)) + (float(price))    # Hier soll der "new_price" wieder um "price" addiert werden
-    print(next_price)
-    print(count)
-tolle_funktion()
+        print(new_price )
+        print(next_price)
+        print(count)
+tolle_funktion()"""
 
 #prices_list()       # call der function
+
+# Hier die Doofmannlösung
+price = 0.79
+
+def counting():
+#if count <= 10:
+    count = 0
+    count = count + 1
+    print(price, "1 Artikel")
+    new_price = (float(price)) + (float(price))   # Hier soll der Preis addiert werden
+    count = count + 1
+    print(new_price,"2 Artikel")
+    next_price = (float(new_price)) + (float(price))    # Hier soll der "new_price" wieder um "price" addiert werden
+    print(next_price,"3 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"4 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"5 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"6 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"7 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"8 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"9 Artikel")
+    next_price = (float(next_price)) + (float(price))
+    print(next_price,"10 Artikel")
+#else:
+#    print("Done")
+counting()
+
+# Ich brauche 2 Funktionen, 1 für die erste "price + price" und eine weitere "next_price"
+
 
 
 
