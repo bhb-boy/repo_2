@@ -44,17 +44,26 @@ print(liste)"""
 # des Artikels stehen. Genauer soll jedes Element in der Liste so aussehen: "Anzahl x Artikel: Preis".
 
 # Hier das final
-name = "Wunderkeks"
-price = 0.79
+# Es werden keine Variablen ausserhalb der function übegeben
+def prices_list(name,price):
+    price_temp = []
+    for i in range(1, 11):
+#        print(i,name,price)
+        price_temp = (i,name,price)
+        print(price_temp)
+#    return []       # Hier soll die Liste rein un ausgegeben werden
 
-def prices_list(name, price):   # Parameter Übergabe aus einer Variable in ()
-    count = 0
-    if count <= 10:
-        count = count + 1
-    return count
-    count = zaehler
-    print(zaehler)
-
-
+print(prices_list("Wunderkeks", 0.79))
 
 
+#def segelsport(artikel, count):
+#    for i in range(0, count):   # Schleife innerhalb einer "range". Counter auf "0" setzen.
+#        print(artikel)
+#
+#segelsport("Black Pearl", 2)    # Übergabe des strg "BLack Pearl" an die Variable "Artikel" in der Funktion "Segelsport""""
+
+# Folgende Ausgabe wird erwartet:
+# ['1 x Wunderkeks: 0.79', '2 x Wunderkeks: 1.58', '3 x Wunderkeks: 2.37', \n
+# '4 x Wunderkeks: 3.16', '5 x Wunderkeks: 3.95', '6 x Wunderkeks: 4.74',  \n
+# '7 x Wunderkeks: 5.53', '8 x Wunderkeks: 6.32', '9 x Wunderkeks: 7.11',  \n
+# '10 x Wunderkeks: 7.9']
