@@ -1,4 +1,4 @@
-# Merkblatt Funktionen und Methoden
+# Merkblatt Funktionen, Methoden, len build in function
 
 # 1. Definition und Aufruf einer Funktion ohne Argument
 def fischbrötchen():
@@ -48,7 +48,46 @@ if rückgabe_mit_ausrufezeichen("Guten Morgen") == "Guten Morgen!":  # Wenn das 
                                                                     # enthält, dann ergänze den strg mit einem "!"
     print("Richtig!")                       # Das Argument "titel" enthält "Guten Morgen". Das if/else ist "true"
 else:
-    print("Falsch")                         # Das Argument "titel" enthält nicht "Guten Morgen, Das if/else ist "false"
+    print("Falsch")                         # Das Argument "titel" enthält nicht "Guten Morgen", Das if/else ist "false"
+
+# "len" Build in function
+print(len("Hallo"))             # Anzahl der Elemente in einem strg
+print(len(["Hallo", "Welt"]))   # Anzahl der Elemente in einer Liste
+
+# 2 Aufrufe der gleichen Function "nardo_funct" mit verschiedenen Parameter
+nardo_funct("Eine Varaible")
+nardo_funct("Eine andere Variable")
+# Ausgabe
+#Eine Varaible
+#Eine andere Variable
+
+# Funktion mit zwei Argumenten
+def argument_funct(name, count):
+    for i in range(0, count):       # counter wird auf "0" gesetzt
+        print(name)                 # Was der hier soll weiß ich nicht
+argument_funct("Mehr!", 4)          # Funktionsaufruf mit Argument "Mehr!" und count = 4
+# Ausgabe:
+#Mehr!
+#Mehr!
+#Mehr!
+#Mehr!
+
+# Veschachtelung von Funktionen
+def schachtel():
+    nardo_funct("Nardo seine erste Funktion")
+    argument_funct("wiederholt sich immer wieder", 3)
+schachtel()
+# Ausgabe:
+#Nardo seine erste Funktion
+#wiederholt sich immer wieder
+#wiederholt sich immer wieder
+#wiederholt sich immer wieder
+
+# len Function
+var1 = len("Vier Bier")  # Zählt die Anzahl der Elemente eines einzelnen String
+var2 = len(["Vier Bier", "und", "eine", "Suppe"])  # Zählt die Anzahl der Listenelemente
+print(var1)
+print(var2)
 
 
 

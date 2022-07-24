@@ -4,7 +4,7 @@
 # Schleifenvariable i nacheinander und automatisch die Werte aus der Liste annimmt.
 liste = [5, 8, 10, "Apfelkraut Salami", "Schokopudding"]
 for i in liste:        # Schleife für jedes einzelne Element der Liste
-    print(i)
+    print(i)           # print der Liste als strg untereinander
 
 # if/else Codeblock wird jeweils nur einmal ausgeführt. Im Gegensatz zur "while" schleife, die endlos läuft
 
