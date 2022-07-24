@@ -26,7 +26,7 @@ piraten = ("Jette","Jan","Hein","Claas","Pit")
 i = 0       # Counter reset
 while i < len(piraten):     # Anzahl der loops anhand der Länge Liste "piraten", funny!
     print(piraten[i])       # print jedes Element der Liste "piraten" als strg untereinander
-    i = i +1                # raise counter. Zustandsänderung damit die Schleifenbedingung nicht dauerhaft erfüllt ist
+    i = i + 1               # raise counter. Zustandsänderung damit die Schleifenbedingung nicht dauerhaft erfüllt ist
 
 # range Objekt
 # Als Sequenz für eine for-Schleife braucht man nicht zwangsläufig eine Liste. Häufig greift man
@@ -43,4 +43,33 @@ for i in range(1,11):       # Schleife die 10 mal läuft
     sum += i                # Addition der Zahlen von 1 - 10
 print(sum)                  # Ergebnis
 
+# Continue & Break
+# Wir können während eines Schleifendurchlaufs den aktuellen Durchlauf vorzeitig abbrechen und
+# unmittelbar mit dem nächsten Schleifendurchlauf fortfahren (continue) oder auch die gesamte
+# Schleife abbrechen (break).
+# Continue
+for i in range(0, 10):   # Schleife die von 0 - 9 zählt
+    if i == 3:          # Wenn "i" 3 erreicht, überspringe diesen Wert und fahre fort
+        continue
+    print(i)
 
+# Break
+for i in range(0, 10):
+    if i == 3:      # Wenn "i" 3 erreicht, bricht der Loop dort ab.
+        break
+    print(i)
+# Ausgabe:
+#0
+#1
+#2
+
+
+liste = [4, 6, 7, 2, 4, 6, 7]
+
+s = 0
+
+for element in liste:
+    s = s + element
+    if s > 10:
+        break
+print(s)
