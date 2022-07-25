@@ -46,21 +46,27 @@ print(liste)"""
 # Hier das final
 # Es werden keine Variablen ausserhalb der function übegeben
 def prices_list(name,price):
-    price_temp = []
-    for i in range(1, 11):
-#        print(i,name,price)
-        price_temp = (i,name,price)
-        print(price_temp)
+    price_temp = []                     # Leere Liste
+    for i in range(1, 11):              # for schliefe mit Abbruchbedingung
+        price_temp = (i,name,price)     # Anzahl "i" x name price
+        return price_temp
+
+#        print(price_temp)
+#        print(price_temp)
+#        print(price_temp)
 #    return []       # Hier soll die Liste rein un ausgegeben werden
 
 print(prices_list("Wunderkeks", 0.79))
 
+# return statement = Functions send Python values/Objects back to the caller.
+#                    These values/objects are known as the function's return value
 
-#def segelsport(artikel, count):
-#    for i in range(0, count):   # Schleife innerhalb einer "range". Counter auf "0" setzen.
-#        print(artikel)
-#
-#segelsport("Black Pearl", 2)    # Übergabe des strg "BLack Pearl" an die Variable "Artikel" in der Funktion "Segelsport""""
+"""def multiply(number1, number2):
+    return number1 * number2
+x = multiply(6,8)       # set variable to print the return code
+
+print(x)"""
+
 
 # Folgende Ausgabe wird erwartet:
 # ['1 x Wunderkeks: 0.79', '2 x Wunderkeks: 1.58', '3 x Wunderkeks: 2.37', \n
