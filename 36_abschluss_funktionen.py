@@ -3,7 +3,7 @@
 # Die Funktion soll dann die Summe der Zahlen aus der Liste ausgeben.
 #
 
-"""cart_prices = [20, 3.5, 6.49, 8.99, 9.99, 14.98]
+cart_prices = [20, 3.5, 6.49, 8.99, 9.99, 14.98]
 
 def list_sum(l):            #   Aufruf Funktionsname(Parameter):
     total = 0               # counter auf "0" setzen
@@ -12,18 +12,15 @@ def list_sum(l):            #   Aufruf Funktionsname(Parameter):
     print(total)
     # alternativ einfach: print(sum(l)) # Hier mit "sum" Funktion
 
-list_sum(cart_prices)"""   # Aufruf der Funktion! Hier wird die Varaible ausserhalb der Funktion übergeben (cart_prices)
+list_sum(cart_prices)   # Aufruf der Funktion! Hier wird die Varaible ausserhalb der Funktion übergeben (cart_prices)
 # Folgende Ausgabe wird erwartet: 63.95
 
 # b.) Funktion, der sie einen Artikelnamen und den Verkaufspreis übergeben kann.
 # Daraus soll die Funktion eine Liste erstellen, in der die Preise von einem, zwei, drei,... bis zehn Einheiten
 # des Artikels stehen. Genauer soll jedes Element in der Liste so aussehen: "Anzahl x Artikel: Preis".
 
-
-
-
 # Hier die lbr Lösung
-"""article = "Wunderkeks"  # Artikel wird ausserhalb der Funktion übergeben
+article = "Wunderkeks"  # Artikel wird ausserhalb der Funktion übergeben
 price = 0.79              # Preis wird auch ausserhalb übergeben
 
 def prices_list():
@@ -37,7 +34,7 @@ def prices_list():
 
 liste = prices_list()                                   # Hier wird die function an eine Variable übergeben
                                                         # um an eine Ausgabe zu kommen
-print(liste)"""
+print(liste)
 
 # b.) Funktion, der sie einen Artikelnamen und den Verkaufspreis übergeben kann.
 # Daraus soll die Funktion eine Liste erstellen, in der die Preise von einem, zwei, drei,... bis zehn Einheiten
