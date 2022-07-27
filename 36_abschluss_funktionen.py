@@ -46,30 +46,26 @@ print(liste)"""
 # Hier das final
 # Es werden keine Variablen ausserhalb der function übegeben
 def prices_list(name,price):
-    price_temp = []                     # Leere Liste
-    for i in range(1, 11):              # for schliefe mit Abbruchbedingung
-        price_temp = (i,name,price)     # Anzahl "i" x name price
-        return price_temp
+    output = []                     # Leere Liste
+    for i in range(1, 11):              # for schliefe mit Abbruchbedingung, "i" ist die Anzahl der Durchgänge
+        # Hier muss der Zählmagic rein
+        new_price = i * price                 # Multipliziere die Anzahl der Durchgänge mit "price"
+        output.append((i,name,new_price))     # Anzahl "i" x name price Innere Klammer ist expression die ein tuple baut.
+                                               # Die äußere Klammer ist ein Statement. Die Ausgabe ist in tuple formatiert.
 
-#        print(price_temp)
-#        print(price_temp)
-#        print(price_temp)
-#    return []       # Hier soll die Liste rein un ausgegeben werden
+    return output                   # return aufruf beendet die Funktion
 
 print(prices_list("Wunderkeks", 0.79))
 
 # return statement = Functions send Python values/Objects back to the caller.
 #                    These values/objects are known as the function's return value
 
-"""def multiply(number1, number2):
-    return number1 * number2
-x = multiply(6,8)       # set variable to print the return code
-
-print(x)"""
-
-
 # Folgende Ausgabe wird erwartet:
 # ['1 x Wunderkeks: 0.79', '2 x Wunderkeks: 1.58', '3 x Wunderkeks: 2.37', \n
 # '4 x Wunderkeks: 3.16', '5 x Wunderkeks: 3.95', '6 x Wunderkeks: 4.74',  \n
 # '7 x Wunderkeks: 5.53', '8 x Wunderkeks: 6.32', '9 x Wunderkeks: 7.11',  \n
 # '10 x Wunderkeks: 7.9']
+
+# f-string gebastel
+
+
