@@ -65,4 +65,11 @@ print(prices_list("Wunderkeks", 0.79))
 
 # f-string gebastel
 
+# Die offizielle Kurs Lösung
+def prices_list(name,price):
+    l = []  # Erzeugt eine leere Liste
+    for i in range(1, 11):
+        l.append(str(i) + " x " + name + "; " + str(price * i))
+        return l
 
+print(prices_list("Wunderkeks", 0.79))
