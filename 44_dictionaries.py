@@ -2,7 +2,7 @@
 
 dictionary = {"Berlin": "BER", "Helsinki": "HEL","Saigon":"SGN"} # Zuordnung KEY:VALUE
 
-print(dictionary["Berlin"])    # Abfrage, Key auf key/value pair
+print(dictionary["Berlin"])    # Abfrage, Key auf key/value pair. Man kann nur auf den Key zugreifen, nicht auf den value!
 
 # append. Hinzufügen von key/value pairs. Sortierung geht möglicherweise verloren.
 dictionary["Budapest"] = "BUD"
